@@ -19,3 +19,4 @@ use App\Http\Controllers\MailController;
 //});
 
 Route::get('/', [MailController::class, 'index']);
+Route::post('/sendmail', [MailController::class, 'sendmail']);

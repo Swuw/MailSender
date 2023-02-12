@@ -1,0 +1,30 @@
+.box{
+    width:450px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    color: #ffffff;
+    & h3{
+        margin-top: 20px;
+    }
+}
+.has-error{
+    border-color:#cc0000;
+    background-color:#ffff99;
+}
+.form-group{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control {
+    color: #ffffff;
+    &:focus {
+        color: #ccc;
+    }
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+

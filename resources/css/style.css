@@ -1,0 +1,9 @@
+.box{
+    width:450px;
+    margin:0 auto;
+    border:1px solid #ccc;
+}
+.has-error{
+    border-color:#cc0000;
+    background-color:#ffff99;
+}
