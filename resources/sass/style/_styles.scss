@@ -1,16 +1,56 @@
+body{
+    max-height: 100%;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
 .box{
     width:450px;
+    right: 25px;
     margin:0 auto;
     border:1px solid #ccc;
     color: #ffffff;
-    & h3{
+    background-color: black;
+    &-header{
         margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        & h3{
+            margin: 0;
+            text-align: center;
+            line-height: 2;
+        }
     }
 }
+
+.butn-close{
+    background: none;
+    color: #fff;
+    text-align: center;
+}
+
 .has-error{
     border-color:#cc0000;
     background-color:#ffff99;
 }
+
+.alert{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.close{
+    margin-right: 10px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #0b5ed7;
+    width: 35px;
+}
+
 .form-group{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -18,6 +58,7 @@
 
 .form-control {
     color: #ffffff;
+    //background-color: #ffffff;
     &:focus {
         color: #ccc;
     }
@@ -28,3 +69,77 @@
     justify-content: flex-end;
 }
 
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mail-container{
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.table{
+    color: #ffffff;
+}
+
+.show-message{
+    margin-right: 10px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #0b5ed7;
+    width: 55px;
+    color: #ffffff;
+    &:hover{
+        background-color: #1C27C9;
+    }
+}
+
+.delete{
+    margin-right: 10px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: 	#8B0000;
+    width: 55px;
+    color: #ffffff;
+    &:hover{
+        background-color: red;
+    }
+}
+
+.modal-content{
+    background-color: black;
+    color: #ffffff;
+}
+
+.btn-close{
+    color: #ffffff;
+    &:hover{
+        color: #ccc;
+    }
+}
+
+.btn-info{
+    border: 1px;
+    border-radius: 10px;
+    background-color: #0b5ed7;
+    width: 70px;
+    color: #ffffff;
+    &:hover{
+        background-color: #1C27C9;
+    }
+}
+
+.btn-primary{
+    background-color: #0b5ed7;
+    color: #ffffff;
+    &:hover{
+        background-color: #1C27C9;
+    }
+}
+
+.modal-body-send{
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+}
