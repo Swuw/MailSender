@@ -19,4 +19,5 @@ use App\Http\Controllers\MailController;
 //});
 
 Route::get('/', [MailController::class, 'index']);
-Route::post('/sendmail', [MailController::class, 'sendmail']);
+Route::post('/sendmail', [MailController::class, 'sendMail']);
+Route::post('/deletemail', [MailController::class, 'deleteMail']);

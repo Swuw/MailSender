@@ -15,7 +15,7 @@ class ArchiveMail extends Migration
     {
         Schema::create('archive_mail', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('title');
             $table->string('email');
             $table->string('message');
             $table->timestamps();
