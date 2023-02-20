@@ -119,7 +119,7 @@ function noEmptyFormInputs(){
     }
 
     form.addEventListener('submit', function (e) {
-        // e.preventDefault();
+
 
         let isTitleValid = checkTitle(),
             isEmailValid = checkEmail(),
@@ -129,8 +129,8 @@ function noEmptyFormInputs(){
             isEmailValid &&
             isTextValid;
 
-        if (isFormValid) {
-            e.currentTarget.submit();
+        if (!isFormValid) {
+            e.preventDefault();
         }
 
     });
